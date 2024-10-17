@@ -3,7 +3,10 @@ import Button from "./components/Button";
 function App() {
   return (
     <div>
-      <Button />
+      <Button content="HOLA" />
+      <Button content="XDXDX" />
+      <Button content="HELLO" />
+      <Button content="NOSE" />
     </div>
   );
 }
