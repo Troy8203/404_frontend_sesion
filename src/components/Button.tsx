@@ -4,20 +4,18 @@ interface ButtonProps {
   content: string;
   color: "orange" | "purple";
   active?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
-const Button: FC<ButtonProps> = ({ content }) => {
+const Button: FC<ButtonProps> = ({ content, color, active, onClick }) => {
   return (
-    <div className="border-2 rounded-full border-fire-bush-500 text-center text-fire-bush-500 hover:bg-fire-bush-600 active:bg-fire-bush-700 hover:text-white hover:border-fire-bush-600 active:border-fire-bush-700 py-2">
-      <button
-        className={`text-white ${
-          content.length > 4 ? "bg-fuchsia-400" : "bg-green-300"
-        }`}
-      >
-        {content}
-      </button>
-    </div>
+    <button
+      className={`border-2 rounded-full py-2 px-6 text-white
+      bg-[${content}]
+      `}
+    >
+      {content}
+    </button>
   );
 };
 

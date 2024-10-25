@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "neon-orange": "0px 0px 15px rgba(224, 118, 27, 0.8)",
+        "neon-purple": "0px 0px 15px rgba(156, 89, 243, 0.8)",
+      },
       colors: {
         "fire-bush": {
           50: "#fef7ec",
